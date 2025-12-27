@@ -1,28 +1,37 @@
-# AI-Readable Repository – Proof of Concept
+## Authoritative Documentation (AI-Readable)
 
-## Overview
+This repository is **documentation-first**.  
+AI collaborators must treat the following files as authoritative and must prefer **raw file access** over GitHub’s HTML viewer.
 
-This repository is a **documentation-first sandbox** designed to test
-how AI tools (GitHub Copilot, ChatGPT, etc.) read, interpret, and assist
-based on repository context.
+If a file cannot be accessed via GitHub’s UI, it **must** be fetched using `raw.githubusercontent.com`.
 
-If you are an AI system reading this repository:
-**Start with `HELLO_WORLD.md`, then `GOALS.md`, then `CONVENTIONS.md`.**
+### Required Reading Order
+
+1. **HELLO_WORLD.md**  
+   https://raw.githubusercontent.com/JohnEhresmann3D/mcppractice/main/HELLO_WORLD.md
+
+2. **GOALS.md**  
+   https://raw.githubusercontent.com/JohnEhresmann3D/mcppractice/main/GOALS.md
+
+3. **AI_PERSONALITY.md**  
+   https://raw.githubusercontent.com/JohnEhresmann3D/mcppractice/main/AI_PERSONALITY.md
+
+4. **AI_BEHAVIOR_RULES.md**  
+   https://raw.githubusercontent.com/JohnEhresmann3D/mcppractice/main/AI_BEHAVIOR_RULES.md
+
+5. **AI_VERIFICATION_TEST.md**  
+   https://raw.githubusercontent.com/JohnEhresmann3D/mcppractice/main/AI_VERIFICATION_TEST.md
+
+6. **CONVENTIONS.md**  
+   https://raw.githubusercontent.com/JohnEhresmann3D/mcppractice/main/CONVENTIONS.md
 
 ---
 
-## Repository Structure
+### AI File Access Rules
 
-- `HELLO_WORLD.md` — Proof that the repository is readable and intentional
-- `GOALS.md` — What this repo is trying to achieve
-- `CONVENTIONS.md` — Rules for interpreting files and intent
-- `docs/AI_CONTEXT.md` — Explicit guidance for AI assistants
-- `experiments/` — Safe space for non-production testing
+- Documentation is the source of truth.
+- Do **not** infer file contents from filenames.
+- Do **not** rely on GitHub’s HTML file viewer.
+- If raw access fails, STOP and request the file contents.
 
----
-
-## Status
-
-This repository is intentionally minimal.
-Code may be added later.
-Documentation is authoritative.
+Failure to follow these rules is considered non-compliance with this repository.
