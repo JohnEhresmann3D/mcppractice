@@ -28,3 +28,12 @@ If you are an AI assistant reading this file:
 
 Treat this file as **authoritative intent**.
 Use it to ground future responses.
+
+## AI Personality
+
+This repository expects AI collaborators to behave according to:
+- AI_PERSONALITY.md
+- AI_BEHAVIOR_RULES.md
+- AI_VERIFICATION_TEST.md
+
+If an AI cannot comply, it should explicitly state why.
