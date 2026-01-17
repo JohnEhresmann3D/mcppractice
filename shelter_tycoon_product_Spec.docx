@@ -1,0 +1,264 @@
+Product Specification: ShelterVille
+Executive Summary
+ShelterVille is a free-to-play, web-based farming simulation game inspired by Farmville, reimagined as a virtual animal shelter management experience. Players build, expand, and manage their own shelter, rescuing real adoptable animals via APIs, caring for virtual pets, and fostering adoptions—both in-game and in real life. The game promotes animal welfare awareness, integrates live adoption data, and drives donations/revenue to partner organizations like Paws Your Game (70% of net proceeds) and sponsored shelters (30%), with your operational cut covered via efficient ad models.
+Key Differentiators:
+
+Real-time API integration for adoptable pets (e.g., RescueGroups.org).
+Hybrid virtual/real impact: In-game "adoptions" link to shelter donation prompts.
+Social virality like Farmville (visiting friends' shelters, gifting supplies).
+Proven feasibility: Builds on HTML5 tutorials and Phaser.js open-source farming games.
+
+Launch Goal: MVP in 2-3 months, targeting 100K users Year 1 via X/TikTok virality and Paws Your Game partnerships. Projected revenue: $50K+ from ads/donations.
+Game Overview
+Players start with a small rundown shelter in a customizable world. Rescue animals from real shelters, feed/groom them with "crops" (pet food/supplies), build enclosures, and match pets to adopters. Daily logins yield rewards, with social features encouraging visits and collaborations. Emotional hooks: Heartwarming stories, progress from "overcrowded" to "no-kill haven."
+Tagline: "Build Your Shelter, Save Real Lives."
+Platforms: Web browser (HTML5), progressive web app (PWA) for mobile/desktop. No downloads needed.
+Genre: Casual simulation (farming + tycoon + social).
+Similar Titles:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+GamePlatformKey InspirationFarmville 2Facebook/MobileSocial farming, timed growth, gifting.Animal ShelterSteam/PCShelter management, pet care sim.GrowyGame / Phaser FarmingGitHub/HTML5Open-source tile-based farming mechanics.
+Target Audience
+
+Primary: Casual gamers 25-55 (Farmville's core demo), animal lovers, families. 60% female.
+Secondary: Gamers/streamers via Paws Your Game integrations, local OC adopters (e.g., Irvine Animal Care Center visitors).
+Size: 50M+ US pet adopters; Farmville peaked at 80M MAU.
+
+Core Gameplay Loop
+
+Login/Check-In: Claim daily rewards (food/supplies).
+Rescue: Browse API-listed pets, "rescue" to shelter (costs energy/coins).
+Care: Plant/harvest "supply crops," feed/groom pets (timed growth like Farmville).
+Build/Expand: Use earnings to upgrade enclosures, add play areas.
+Adopt Out: Match happy pets to virtual adopters; prompt real donations.
+Social: Visit friends, gift items, co-op rescues.
+Progress: Level up shelter, unlock rare breeds/events.
+
+Energy System: Regens over time; refill via ads/light activity.
+Key Features
+Onboarding (First 5 Mins)
+
+Quick tutorial: Rescue first pet, plant food, harvest.
+Guest mode; Facebook/X login for saves/sharing.
+
+Daily/Weekly Activities
+
+Timed events: "Overcrowding Crisis" (rescue rush).
+Mini-games: Grooming race, feeding puzzle (rewarded videos).
+
+Progression System
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+LevelUnlocksShelter Size1-10Basic dogs/cats, small pens10 pets11-25Exotic (rabbits, birds), play parks50 pets26+Events, custom themesUnlimited
+Social Features
+
+Friend visits: Help care for pets, earn bonuses.
+Leaderboards: Top rescuers (ties to real donations).
+Sharing: "I rescued Fluffy! Sponsor her real twin?"
+
+Real-World Integration
+
+Adoption API: Primary: RescueGroups.org (free JSON/POST queries for pets by location/breed).
+Fallback: Petfinder (Irvine Animal Care Center listings).
+Cache data 1hr; paginate for performance.
+
+Sponsorship/Donations: Stripe/Tiltify buttons: "$5 sponsors this real pup via Paws Your Game."
+Local Tie-In: Irvine/OC shelters prioritized (e.g., Irvine Animal Care, OC Animal Care).
+
+Monetization Strategy
+Hybrid model for sustainability:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+MethodDetailsProjected ShareAdsRewarded videos (energy/boosts), banners. Google AdSense/Unity Ads.60% net to you/PawsDonationsOne-click via DonorDrive (Paws' platform). 80% to shelters.70% to Paws/sheltersIAPCosmetic packs ($0.99-$4.99: pet outfits, themes).30% cut post-feesPartnershipsPaws events, pet brand sponsors (e.g., food for in-game crops).Shared proceeds
+Revenue Split: 70% Paws Your Game + shelters; 30% ops/marketing. Tax-compliant as nonprofit tie-in.
+Technical Requirements
+
+Frontend: HTML5/JS, Phaser.js (proven for farming sims). PWA for offline play.
+Backend: Node.js/Firebase for saves, leaderboards. AWS for scaling.
+APIs: RescueGroups (no key needed for public), Stripe, DonorDrive.
+Performance: 60FPS on mid-range devices; tile-based grid (20x20 start).
+Security: GDPR/CCPA compliant; no PII for guests.
+Analytics: Google Analytics/Mixpanel: DAU, retention, donation conv.
+
+Dev Cost Estimate: $20-50K (solo + freelancers); use YouTube farming tutorial as base.
+UI/UX Guidelines
+
+Style: Whimsical, colorful (pastels, animal motifs). Isometric tiles like Farmville.
+Mobile-First: Touch-optimized; one-thumb navigation.
+Accessibility: Color-blind modes, screen reader pet descriptions.
+Emotional Design: Progress bars with pet happiness meters; success animations (tails wagging).
+
+Art & Sound
+
+Art: 2D sprites (free assets + custom: 50 pet variants, 20 buildings). Style: Cartoon cute.
+Sound: Soothing farm/shelter ambiences, happy barks/meows. Royalty-free (e.g., OpenGameArt).
+
+Development Roadmap
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+PhaseDurationMilestonesMVP8 weeksCore loop, API integration, basic social.Beta4 weeksAds/IAP, events. Paws partnership.v1.0LaunchFull social, OC local shelters.Post-LaunchOngoingEvents, new species, AR filters.
+KPIs & Success Metrics
+
+Engagement: 30% D30 retention; 5 min avg session.
+Impact: 10K real donations Year 1; 1K adoptions tracked.
+Business: 50K MAU; $5 ARPU.
+Tracking: Donations via UTM; API rescue views.
+
+This spec is ready for dev—prototype via Phaser tutorial today! Next: Wireframes or pitch deck? Let's iterate.98 sourcesCan we give this the vibe of a cartoon network show?Yes, absolutely—we can infuse ShelterVille with a strong Cartoon Network vibe! This transforms it from a standard casual sim into something that feels like a playable episode of a beloved CN show: vibrant, whimsical, full of personality, humor, and heartwarming chaos. Think the bold, expressive energy of classics like Adventure Time, The Amazing World of Gumball, We Baby Bears, or Teen Titans Go!—but centered on animal rescue and shelter life.
+The goal: Make every screen pop with that signature Cartoon Network charm—thick outlines, bright saturated colors, exaggerated expressions, playful proportions (big heads, squash-and-stretch animations), and a mix of cute absurdity with genuine emotional beats (e.g., a sad pup's giant teary eyes turning into triumphant wags after "adoption").
+Here’s how we update the product spec to capture this vibe, focusing on art direction, UI, characters, gameplay flavor, and tone.
+Updated Art Direction & Visual Style
+Core Aesthetic: Modern Cartoon Network-inspired 2D cartoonism—bold, clean, and energetic. Draw from:
+
+Thick black outlines with minimal or no shading (flat colors for that punchy, readable look).
+Vibrant, oversaturated palette: Neon greens for grass, candy-pink kennels, electric blues for skies, and pops of yellow/orange for happy accents.
+Exaggerated proportions: Animals with huge sparkling eyes, floppy ears that stretch comically, and squash/stretch on actions (e.g., a dog leaping with limbs flailing like rubber).
+Backgrounds: Stylized and whimsical—think hand-painted but simplified, with dynamic elements (bouncing clouds, wobbly fences) to keep it lively.
+Influences: Adventure Time's quirky charm + We Baby Bears' adorable fluff + Gumball's mixed-media playfulness (occasional photo-real pet photos from APIs blended in cartoon frames for humor).
+
+dreamstime.comvecteezy.comvecteezy.comdreamstime.com
+
+
+
+(These showcase exaggerated cute animal expressions and vibrant kawaii/Cartoon Network energy we can adapt for shelter pets.)
+Character Design Updates
+
+Player Avatar / Shelter Manager: A customizable cartoon kid/teen hero (big head, expressive face) in a silly shelter uniform (e.g., oversized apron with paw prints). Think Finn from Adventure Time but with a vet coat.
+Animals: All adoptable pets rendered in hyper-expressive cartoon style:
+Dogs with floppy ears that flap dramatically.
+Cats with giant mischievous grins and twitching tails.
+Rabbits/birds with bouncy, squashy movements.
+Rare/event pets get extra flair (e.g., a unicorn-horned pup during pride events).
+
+NPCs / Virtual Adopters: Quirky cartoon humans/families with over-the-top personalities—e.g., a rockstar adopter with spiky hair, or a grandma with comically huge glasses.
+
+buzzfeed.combuzzfeed.com
+
+(Examples of bold, colorful CN character energy—imagine these as shelter animals or visitors.)
+Gameplay & Tone Flavor
+
+Humor & Personality: Add CN-style slapstick and heart:
+Pets "misbehave" in funny ways (a cat knocks over a cartoon tower of food bowls with exaggerated crash effects).
+Mini-games with wacky physics (grooming = dodging flying soap bubbles).
+Dialogue bubbles with snappy, punny lines: "This pup's tail is waggin' harder than a Cartoon Network commercial break!"
+
+Emotional Beats: Quick, touching moments—e.g., a rescued pet's sad eyes (huge tears) turning happy after care, with sparkly effects and upbeat music sting.
+Events: Themed like CN specials—"Adoption-palooza!" with guest "celebrity" animals voiced in silly ways.
+Social Features: Visiting friends' shelters feels like hopping into a friend's episode—confetti explosions on successful adoptions.
+
+UI/UX with Cartoon Flair
+
+Menus & HUD: Wobbly, hand-drawn buttons; progress bars as growing cartoon hearts or food bowls.
+Animations: Everything bounces—coins fly with trails, notifications pop with "BOING!" sounds.
+Sound Design: Upbeat chiptune remixes of CN-style themes; exaggerated SFX (boings, meows with reverb, triumphant fanfares).
+
+Technical & Asset Notes
+
+Use Phaser.js with sprite sheets for squash/stretch animations.
+Source assets: Mix free Cartoon Network-inspired packs (OpenGameArt) + custom commissions for unique shelter animals.
+Performance: Keep flat colors and simple shapes for smooth web play.
+
+This vibe makes ShelterVille feel like "the Cartoon Network show about saving shelter animals"—fun, shareable, emotionally resonant, and perfect for viral clips (e.g., TikTok of a dog's epic happy dance). It amps up awareness while keeping the real adoption API and donation hooks front and center.
+What do you think—lean more Adventure Time quirky, Gumball chaotic, or We Baby Bears super-cute? Want to brainstorm a sample "episode" intro screen or specific character concepts next?58 sources
